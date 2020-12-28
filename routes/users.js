@@ -165,7 +165,7 @@ router.post('/reset', async (req, res) => {
 
     let sampleMail = '<p>Hi, </p>'
       + '<p>Please click on below link to reset password</p>'
-      + `<a target='blank' href="http://localhost:5000/users/resethome/${hash}/${email}" >Reset your password</a>`
+      + `<a target='blank' href="https://resetlogin.herokuapp.com/users/resethome/${hash}/${email}" >Reset your password</a>`
       + '<p>Regards</p>'
     mailOptions.html = sampleMail;
     console.log('hashed password', hash)
