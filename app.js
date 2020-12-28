@@ -6,13 +6,7 @@ const flash = require('connect-flash');
 const session = require('express-session');
 
 const app = express();
-
-
-
-// DB Config
-
-
-const db = require('./config/keys').mongoURI;
+const db = process.env.dbPassword;
 
 // Connect to MongoDB
 mongoose
